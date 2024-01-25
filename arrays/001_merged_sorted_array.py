@@ -25,6 +25,11 @@ Output: [1]
 Explanation: The arrays we are merging are [] and [1].
 The result of the merge is [1].
 Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.
+
+Real world scenario:
+imagine we have two lines of people who were given a card with a number.
+they've been put in ascending order. line A (nums1), has extra space for the people in line B (nums2). Try to merge these two in such a way that you don't need extra space
+
 """
 
 def merge(nums1, m, nums2, n):
