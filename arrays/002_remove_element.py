@@ -26,7 +26,7 @@ Imagine a shelf in a bookcase. We want to arrange it by a given color. We want t
 so assume we have this shelf
 [red, blue, blue, red] similar to [3,2,2,3].
 
-We want to move the blue books to the left side of the shelf, so the "start" of the shelf.
+Let's say we want to move the books that aren't red to the start of the shelf, so all blue books go to the start aka the left side.
 
 we could look at the start and the end of the shelf. Compare the books' color and swap them only if the book on the left isn't blue.
 
@@ -47,3 +47,47 @@ def removeElement(nums, val):
       end -= 1
 
   return start
+
+# nums = [3,2,2,3], val = 3
+# start = 0
+# end = 3
+
+# First Loop
+# while 0 <= 3:
+#       (3)
+#   if nums[0] != 3:
+#     start += 1
+#   else:
+#     nums[0] = nums[3] <- we hit this
+#     end -= 1
+
+# After first loop
+# nums[3,2,2,3]
+# start = 0
+# end = 2
+
+# Second Loop
+# while 0 <= 2:
+#       (3)
+#   if nums[0] != 3:
+#     start += 1
+#   else:
+#       (3)      (2)
+#     nums[0] = nums[2]
+#     end -= 1
+
+# After second loop
+# nums[2,2,3,3]
+# start = 0
+# end = 1
+
+# Third Loop
+# while 1 <= 1:
+#       (2)
+#   if nums[1] != 3:
+#     start += 1
+#   else:
+#     nums[1] = nums[1]
+#     end -=1
+
+# I'm not too positive on that last loop BUT hoping its right
