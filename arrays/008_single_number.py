@@ -28,3 +28,17 @@ we can then loop through the dictionary and return the number that shows up once
 
 these would mean two loops though which I believe is O(2n)
 """
+
+
+def singleNumber(nums):
+    seen = {}
+
+    for _, value in enumerate(nums):
+        if value in seen:
+            seen[value] += 1
+        else:
+            seen[value] = 1
+
+    for key, value in seen.items():
+        if value == 1:
+            return key
