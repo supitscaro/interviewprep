@@ -37,3 +37,14 @@ we HAD to add 4 to something else...there would be nothing to add it to
 
 so i think this could be a good first approach, but prob not the best one
 """
+
+
+def two_sum(nums, target):
+    if len(nums) == 2:
+        if nums[0] + nums[1] == target:
+            return [0, 1]
+
+    for i in range(len(nums)):
+        for j in range(i + 1, len(nums)):
+            if nums[i] + nums[j] == target:
+                return [i, j]
