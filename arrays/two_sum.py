@@ -52,6 +52,7 @@ to the current number to get the target number
 """
 
 
+# not ideal
 def two_sum(nums, target):
     if len(nums) == 2:
         if nums[0] + nums[1] == target:
@@ -61,3 +62,15 @@ def two_sum(nums, target):
         for j in range(i + 1, len(nums)):
             if nums[i] + nums[j] == target:
                 return [i, j]
+
+
+def optimized_two_sum(nums, target):
+    seen = {}
+
+    for i, num in enumerate(nums):
+        complement = target - num
+
+        if complement in seen:
+            return [seen[complement], i]
+
+        seen[num] = i
