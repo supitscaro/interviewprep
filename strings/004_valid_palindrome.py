@@ -28,8 +28,14 @@ Note:
 
 
 def validPalindrome(s):
-    start = 0
-    end = len(s) - 1
+    newStr = ""
 
-    while start <= end:
-        pass
+    for char in s:
+        if isAlNum(char):
+            newStr += char.lower()
+
+    return newStr == newStr[::-1]
+
+
+def isAlNum(char):
+    return ("a" < char.lower() <= "z") or ("0" <= char.lower() <= "9")
