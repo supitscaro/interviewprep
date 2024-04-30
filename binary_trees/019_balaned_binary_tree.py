@@ -22,6 +22,9 @@ is not more than 1.
 
 """
 
+# Time complexity: O(n)
+# Space complexity: O(h) h = height
+
 
 def isBalanced(root):
     def dfs(root):
