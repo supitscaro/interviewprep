@@ -1,0 +1,24 @@
+## Some example questions for GraphQL APIs
+
+- What is GraphQL and how does it differ from REST?
+- Can you explain the main components of a GraphQL server?
+- What types of operations can be performed with GraphQL?
+- How does GraphQL handle relationships between objects?
+- How do you structure a query in GraphQL?
+- What are mutations and queries in GraphQL?
+- How are arguments used in GraphQL queries?
+- What is a GraphQL schema?
+- How do you design a schema for a given set of requirements?
+- Can you describe the role of resolvers in GraphQL?
+- What are the best practices for versioning a GraphQL schema?
+- What are some common performance issues with GraphQL and how can they be mitigated?
+- How does GraphQL handle caching?
+- Can you explain how batching and data loader patterns work in GraphQL?
+- What strategies can you use to optimize a GraphQL query?
+- How does GraphQL fit into a microservices architecture?
+- Can you discuss the pros and cons of using a single unified GraphQL schema versus multiple schemas in a microservices architecture?
+- How would you implement authentication and authorization - in GraphQL APIs across different services?
+- What are the challenges of implementing GraphQL in microservices and how would you address them?
+- What are some security best practices for GraphQL APIs?
+- How do you prevent overly complex queries or depth attacks in GraphQL?
+- What measures can you take to secure a GraphQL endpoint?

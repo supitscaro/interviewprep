@@ -1,0 +1,25 @@
+## Some example questions for RESTful APIs
+
+- What is REST, and what are its principles?
+- Explain the difference between GET and POST methods in HTTP.
+- What are the main components of a RESTful API?
+- Describe the benefits of using RESTful APIs over other architectural styles.
+- What is HATEOAS, and how does it relate to REST?
+- Explain the concept of resource identification in RESTful APIs.
+- What are the common status codes used in RESTful APIs, and what do they indicate?
+- How do you handle authentication and authorization in RESTful APIs?
+- What are some best practices for designing RESTful API endpoints?
+- How do you handle pagination, filtering, and sorting in RESTful APIs?
+- Discuss the importance of versioning in RESTful API design.
+- What is content negotiation, and how is it used in RESTful APIs?
+- Explain the concept of idempotence in the context of RESTful APIs.
+- How do you handle errors and exceptions in RESTful API responses?
+- What tools and libraries have you used for testing and documenting RESTful APIs?
+- What are some common performance optimization techniques for RESTful APIs?
+- Discuss the challenges and best practices for versioning APIs.
+- How do you handle cross-origin resource sharing (CORS) in RESTful APIs?
+- Explain the concept of hypermedia in the context of RESTful APIs.
+- What is a payload in the context of a REST api?
+- What is a REST message?
+- What are the core components of an HTTP request?
+- What are the core components of an HTTP response?
