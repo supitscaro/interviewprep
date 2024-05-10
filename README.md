@@ -8,7 +8,7 @@
 
 ### LeetCode Questions
 
-This folder contains a curated list of LeetCode problems that are frequently asked in interviews. Each problem is accompanied by a solution and a brief discussion on the approach. Problems are categorized by their difficulty level.
+This folder contains a curated list of LeetCode problems. Each problem is accompanied by a solution. Some may have an explanation. Problems are categorized by topic. These will get updated every so often and are following the [Grind 75 challenge](https://www.techinterviewhandbook.org/grind75?weeks=8)
 
 - [Arrays](/leetcode/arrays)
 - [Binary Trees](/leetcode/binary_trees)
@@ -17,7 +17,7 @@ This folder contains a curated list of LeetCode problems that are frequently ask
 
 ### Technical Questions
 
-This section is divided into subcategories focusing on different aspects of software development, particularly API technologies.
+This section is divided into subcategories focusing on different aspects of software development, particularly API technologies. Eventually there will be more topics such as cacheing, databases, networking, and key concepts of frontend development.
 
 #### REST API
 
