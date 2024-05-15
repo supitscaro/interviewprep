@@ -17,7 +17,7 @@ This folder contains a curated list of LeetCode problems. Each problem is accomp
 
 ### Technical Questions
 
-This section is divided into subcategories focusing on different aspects of software development, particularly API technologies. Eventually there will be more topics such as cacheing, databases, networking, and key concepts of frontend development.
+This section is divided into subcategories focusing on different aspects of software development, particularly API technologies. Eventually there will be more topics such as caching, databases, networking, and key concepts of frontend development.
 
 #### REST API
 
