@@ -26,7 +26,7 @@ if so, we should just return that
 
  if len(nums) == 2:
     return nums
-        
+
 so maybe we could compare the current element and every element after it?
  3 + 2 = 5
  3 + 4 = 7
@@ -38,16 +38,16 @@ we HAD to add 4 to something else...there would be nothing to add it to
 so i think this could be a good first approach, but prob not the best one.
 
 One thing to note about the previous approach is that we don't care about what we've already seen. we're focusing
-only on what is yet to come. 
+only on what is yet to come.
 There is another way to solve this which would do the opposite aka we'd care about what's already been seen.
 
 We can use a hash table for this. The goal would be to jot down or store the values we've encountered. This way
-we can continue to move down the list and compare with what we've seen. 
+we can continue to move down the list and compare with what we've seen.
 
 Let say we have [3, 2, 4] and a target == 6. We also have a seen = {}
 
-We could loop through the list and if the current item we're on isn't in the seen hash, then we add it. We can 
-also check if the target - num is in the seen hash. This would mean that we've come across the number we could add 
+We could loop through the list and if the current item we're on isn't in the seen hash, then we add it. We can
+also check if the target - num is in the seen hash. This would mean that we've come across the number we could add
 to the current number to get the target number
 """
 
@@ -74,3 +74,22 @@ def optimized_two_sum(nums, target):
             return [seen[complement], i]
 
         seen[num] = i
+
+    return seen
+
+
+def two_pointer_two_sum(nums, target):
+    sorted_nums = sorted((num, index) for index, num in enumerate(nums))
+
+    left, right = 0, len(sorted_nums) - 1
+
+    while left <= right:
+        value = sorted_nums[left][0] + sorted_nums[right][0]
+        if value == target:
+            return [sorted_nums[left][1], sorted_nums[right][1]]
+        elif value < target:
+            left += 1
+        else:
+            right -= 1
+
+    return []
